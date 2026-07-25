@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | Hospital Público Manolo Morales</title>
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Material Symbols -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+          rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="/assets/css/dashboard.css">
+
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!--====================================
+                    SIDEBAR
+    =====================================-->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <span class="material-symbols-outlined">
+
+                local_hospital
+
+            </span>
+
+            <div>
+
+                <h2>
+
+                    Manolo Morales
+
+                </h2>
+
+                <p>
+
+                    Management System
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <li class="active">
+
+                    <a href="#">
+
+                        <span class="material-symbols-outlined">
+
+                            home
+
+                        </span>
+
+                        Inicio
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="#">
+
+                        <span class="material-symbols-outlined">
+
+                            dashboard
+
+                        </span>
+
+                        Dashboard
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="#">
+
+                        <span class="material-symbols-outlined">
+
+                            person
+
+                        </span>
+
+                        Pacientes
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="#">
+
+                        <span class="material-symbols-outlined">
+
+                            calendar_month
+
+                        </span>
+
+                        Citas
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="#">
+
+                        <span class="material-symbols-outlined">
+
+                            description
+
+                        </span>
+
+                        Expedientes
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="#">
+
+                        <span class="material-symbols-outlined">
+
+                            account_circle
+
+                        </span>
+
+                        Perfil
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="#">
+
+                        <span class="material-symbols-outlined">
+
+                            contact_support
+
+                        </span>
+
+                        Contacto
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </aside>
+
+    <!--====================================
+                  CONTENIDO
+    =====================================-->
+
+    <main class="content">
+
+        <!-- Topbar -->
+
+        <header class="topbar">
+
+            <h1>
+
+                Dashboard
+
+            </h1>
+
+            <div class="topbar-actions">
+
+                <button>
+
+                    <span class="material-symbols-outlined">
+
+                        search
+
+                    </span>
+
+                </button>
+
+                <button>
+
+                    <span class="material-symbols-outlined">
+
+                        notifications
+
+                    </span>
+
+                </button>
+
+                <button>
+
+                    <span class="material-symbols-outlined">
+
+                        settings
+
+                    </span>
+
+                </button>
+
+            </div>
+
+        </header>
+
+        <!-- Bienvenida -->
+
+        <section class="welcome">
+
+            <h2>
+
+                Bienvenido, Dr. Morales
+
+            </h2>
+
+            <p>
+
+                Aquí tienes un resumen del estado actual del hospital
+                y las tareas pendientes para el día de hoy.
+
+            </p>
+
+        </section>
+
+        <!-- Tarjetas -->
+
+        <section class="stats">
+
+            <article class="stat-card">
+
+                <span class="material-symbols-outlined">
+
+                    health_and_safety
+
+                </span>
+
+                <div>
+
+                    <small>
+
+                        Total de Pacientes
+
+                    </small>
+
+                    <h2>
+
+                        1,248
+
+                    </h2>
+
+                </div>
+
+            </article>
+
+            <article class="stat-card">
+
+                <span class="material-symbols-outlined">
+
+                    event_available
+
+                </span>
+
+                <div>
+
+                    <small>
+
+                        Citas de Hoy
+
+                    </small>
+
+                    <h2>
+
+                        84
+
+                    </h2>
+
+                </div>
+
+            </article>
+
+            <article class="stat-card">
+
+                <span class="material-symbols-outlined">
+
+                    assignment_late
+
+                </span>
+
+                <div>
+
+                    <small>
+
+                        Reportes Pendientes
+
+                    </small>
+
+                    <h2>
+
+                        12
+
+                    </h2>
+
+                </div>
+
+            </article>
+
+            <article class="stat-card">
+
+                <span class="material-symbols-outlined">
+
+                    hotel
+
+                </span>
+
+                <div>
+
+                    <small>
+
+                        Camas Disponibles
+
+                    </small>
+
+                    <h2>
+
+                        45 / 200
+
+                    </h2>
+
+                </div>
+
+            </article>
+
+        </section>
+
+                <!--====================================
+                CONTENIDO PRINCIPAL
+        =====================================-->
+
+        <section class="dashboard-content">
+
+            <!--====================================
+                    PANEL IZQUIERDO
+            =====================================-->
+
+            <div class="dashboard-main">
+
+                <!-- Próximas citas -->
+
+                <section class="panel">
+
+                    <div class="panel-header">
+
+                        <h2>
+
+                            Próximas Citas
+
+                        </h2>
+
+                        <a href="#">
+
+                            Ver todas
+
+                        </a>
+
+                    </div>
+
+                    <table class="appointments-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Paciente</th>
+                                <th>Médico</th>
+                                <th>Hora</th>
+                                <th>Estado</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>María López</td>
+
+                                <td>Dr. Carlos Pérez</td>
+
+                                <td>08:30 AM</td>
+
+                                <td>
+
+                                    <span class="badge confirmed">
+
+                                        Confirmada
+
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>Juan Martínez</td>
+
+                                <td>Dra. Ana Ruiz</td>
+
+                                <td>09:15 AM</td>
+
+                                <td>
+
+                                    <span class="badge pending">
+
+                                        Pendiente
+
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>Sofía Hernández</td>
+
+                                <td>Dr. José Flores</td>
+
+                                <td>10:40 AM</td>
+
+                                <td>
+
+                                    <span class="badge confirmed">
+
+                                        Confirmada
+
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>Carlos Gómez</td>
+
+                                <td>Dra. Laura Silva</td>
+
+                                <td>11:30 AM</td>
+
+                                <td>
+
+                                    <span class="badge cancelled">
+
+                                        Cancelada
+
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </section>
+
+                <!-- Pacientes recientes -->
+
+                <section class="panel">
+
+                    <div class="panel-header">
+
+                        <h2>
+
+                            Pacientes Recientes
+
+                        </h2>
+
+                        <a href="#">
+
+                            Ver más
+
+                        </a>
+
+                    </div>
+
+                    <div class="patient-list">
+
+                        <article class="patient-card">
+
+                            <div class="patient-avatar">
+
+                                MR
+
+                            </div>
+
+                            <div>
+
+                                <h3>
+
+                                    María Rodríguez
+
+                                </h3>
+
+                                <p>
+
+                                    Consulta General
+
+                                </p>
+
+                            </div>
+
+                            <button>
+
+                                Ver
+
+                            </button>
+
+                        </article>
+
+                        <article class="patient-card">
+
+                            <div class="patient-avatar">
+
+                                JP
+
+                            </div>
+
+                            <div>
+
+                                <h3>
+
+                                    Juan Pérez
+
+                                </h3>
+
+                                <p>
+
+                                    Cardiología
+
+                                </p>
+
+                            </div>
+
+                            <button>
+
+                                Ver
+
+                            </button>
+
+                        </article>
+
+                        <article class="patient-card">
+
+                            <div class="patient-avatar">
+
+                                AG
+
+                            </div>
+
+                            <div>
+
+                                <h3>
+
+                                    Ana García
+
+                                </h3>
+
+                                <p>
+
+                                    Pediatría
+
+                                </p>
+
+                            </div>
+
+                            <button>
+
+                                Ver
+
+                            </button>
+
+                        </article>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+            <!--====================================
+                    PANEL DERECHO
+            =====================================-->
+
+            <aside class="dashboard-sidebar">
+
+                <section class="panel">
+
+                    <h2>
+
+                        Accesos Rápidos
+
+                    </h2>
+
+                    <div class="quick-actions">
+
+                        <button>
+
+                            <span class="material-symbols-outlined">
+
+                                person_add
+
+                            </span>
+
+                            Nuevo Paciente
+
+                        </button>
+
+                        <button>
+
+                            <span class="material-symbols-outlined">
+
+                                calendar_add_on
+
+                            </span>
+
+                            Nueva Cita
+
+                        </button>
+
+                        <button>
+
+                            <span class="material-symbols-outlined">
+
+                                receipt_long
+
+                            </span>
+
+                            Nueva Receta
+
+                        </button>
+
+                        <button>
+
+                            <span class="material-symbols-outlined">
+
+                                lab_profile
+
+                            </span>
+
+                            Registrar Examen
+
+                        </button>
+
+                    </div>
+
+                </section>
+
+                <section class="panel">
+
+                    <h2>
+
+                        Alertas
+
+                    </h2>
+
+                    <ul class="alerts">
+
+                        <li>
+
+                            4 citas pendientes de confirmar.
+
+                        </li>
+
+                        <li>
+
+                            2 resultados de laboratorio disponibles.
+
+                        </li>
+
+                        <li>
+
+                            1 médico finalizará turno en 30 minutos.
+
+                        </li>
+
+                        <li>
+
+                            5 pacientes esperan atención.
+
+                        </li>
+
+                    </ul>
+
+                </section>
+
+            </aside>
+
+        </section>
+
+                <!--====================================
+                    FOOTER
+        =====================================-->
+
+        <footer class="dashboard-footer">
+
+            <p>
+
+                © 2026 Hospital Público Manolo Morales.
+                Sistema de Gestión Hospitalaria.
+
+            </p>
+
+        </footer>
+
+    </main>
+
+</div>
+
+<!--====================================
+            MODAL NUEVA CITA
+=====================================-->
+
+<div class="modal" id="appointmentModal">
+
+    <div class="modal-content">
+
+        <div class="modal-header">
+
+            <h2>
+
+                Nueva Cita
+
+            </h2>
+
+            <button class="close-modal">
+
+                <span class="material-symbols-outlined">
+
+                    close
+
+                </span>
+
+            </button>
+
+        </div>
+
+        <form class="appointment-form">
+
+            <div class="form-group">
+
+                <label>
+
+                    Paciente
+
+                </label>
+
+                <input
+                    type="text"
+                    placeholder="Nombre del paciente">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>
+
+                    Especialidad
+
+                </label>
+
+                <select>
+
+                    <option>
+
+                        Seleccionar
+
+                    </option>
+
+                    <option>
+
+                        Medicina General
+
+                    </option>
+
+                    <option>
+
+                        Pediatría
+
+                    </option>
+
+                    <option>
+
+                        Cardiología
+
+                    </option>
+
+                    <option>
+
+                        Ginecología
+
+                    </option>
+
+                </select>
+
+            </div>
+
+            <div class="form-row">
+
+                <div class="form-group">
+
+                    <label>
+
+                        Fecha
+
+                    </label>
+
+                    <input type="date">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+
+                        Hora
+
+                    </label>
+
+                    <input type="time">
+
+                </div>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>
+
+                    Observaciones
+
+                </label>
+
+                <textarea
+                    rows="4"
+                    placeholder="Escriba alguna observación..."></textarea>
+
+            </div>
+
+            <div class="form-buttons">
+
+                <button
+                    type="button"
+                    class="btn btn-secondary">
+
+                    Cancelar
+
+                </button>
+
+                <button
+                    type="submit"
+                    class="btn btn-primary">
+
+                    Guardar Cita
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="/assets/js/dashboard.js"></script>
+
+</body>
+
+</html>
